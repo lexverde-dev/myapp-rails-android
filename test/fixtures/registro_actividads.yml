@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accion: MyString
+  modelo: MyString
+  registro_id: 1
+  datos: MyText
+  ip: MyString
+
+two:
+  accion: MyString
+  modelo: MyString
+  registro_id: 1
+  datos: MyText
+  ip: MyString

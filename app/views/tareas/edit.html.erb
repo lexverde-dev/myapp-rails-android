@@ -1,0 +1,15 @@
+<h1>Editar Tarea</h1>
+<%= form_with(model: @tarea) do |form| %>
+  <div>
+    <%= form.label :titulo, "Título:" %>
+    <%= form.text_field :titulo %>
+  </div>
+  <div>
+    <%= form.label :completada, "¿Completada?" %>
+    <%= form.check_box :completada %>
+  </div>
+  <div>
+    <%= form.submit "Actualizar Tarea" %>
+  </div>
+<% end %>
+<%= link_to "Volver", tareas_path %>

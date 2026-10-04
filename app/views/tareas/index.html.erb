@@ -1,0 +1,11 @@
+<h1>Mis Tareas</h1>
+<%= link_to "Nueva Tarea", new_tarea_path %>
+
+<ul>
+  <% @tareas.each do |tarea| %>
+    <li>
+      <%= link_to tarea.titulo, tarea_path(tarea) %>
+      - <%= tarea.completada ? "✅ Completada" : "⏳ Pendiente" %>
+    </li>
+  <% end %>
+</ul>

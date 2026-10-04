@@ -1,0 +1,12 @@
+<h1><%= @tarea.titulo %></h1>
+
+<p>Estado: <%= @tarea.completada ? "✅ Completada" : "⏳ Pendiente" %></p>
+
+<br>
+
+<%= link_to "Editar", edit_tarea_path(@tarea) %> |
+<%= link_to "Volver", tareas_path %>
+
+<br><br>
+
+<%= button_to "Eliminar", tarea_path(@tarea), method: :delete, form: { data: { turbo_confirm: "¿Estás seguro?" } } %>
